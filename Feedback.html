@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Moha's Project</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/b0e962578a.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container-fluid">
+
+  <div class="row">
+
+    <div class="row sidesAuto">
+
+      <div class="col-xl-5 col-lg-6 col-md-7 col-sm-12">
+
+        <div class="Qleft">
+          <h3>Questionnaire</h3>
+        </div>
+
+        <div class="Qright">
+          <a href="hearAbout.html"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+
+      </div>
+
+      <div class="col-12"></div>
+
+      <div class="col-xl-4 col-lg-5 col-md-7 col-sm-12 text-center">
+
+              <div class="col-sm-12">
+                <h4>Restaurant</h4>
+              </div>
+
+          <div class="rectangle">
+            <div class="rectangleProgress"></div>
+          </div>
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+    <div class="containerAlign">
+
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+          <p class="textCo">Please answer the question to your best
+          understanding to help us upgrade our service to you</p>
+        </div>
+            <div class="container-fluid">
+              <div class="col-sm-12 col-md-7 col-lg-6 col-xl-3 deepBlackp">
+                <h5>1. Welcome on Arrival </h5>
+              </div>
+
+              <div class="col-12"></div>
+
+              <div class="col-xl-4 col-lg-5 col-md-7 col-sm-12">
+
+                <div class="col-sm-12">
+                  <p>Select your rating of our Service</p>
+                </div>
+
+              </div>
+
+              <div class="col-12">
+                <div class="col-sm-12 col-md-7 col-lg-6 col-xl-4">
+                  <div class="text-center custom-button-feed">
+                      <i class="fa-solid fa-circle mov"></i>Excellent
+                  </div>
+
+                  <div class="text-center custom-button-feed">
+                      <i class="fa-solid fa-circle mov"></i>Good
+                  </div>
+                  <div class="text-center custom-button-feed">
+                      <i class="fa-solid fa-circle mov"></i>Fair
+                  </div>
+                  <div class="text-center custom-button-feed">
+                      <i class="fa-solid fa-circle mov"></i>Poor
+                  </div>
+
+                </div>
+
+
+              </div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                  var buttons = document.querySelectorAll('.custom-button-feed');
+
+                  buttons.forEach(function(button) {
+                    button.addEventListener('click', function() {
+                      // Reset the background color and text/icon color of all buttons
+                      buttons.forEach(function(btn) {
+                        btn.style.backgroundColor = 'rgba(130, 130, 130, 0.2)';
+                        btn.style.color = '#AFAFAF'; // Reset text color
+                        var icons = btn.querySelectorAll('i'); // Select icons within buttons
+                        icons.forEach(function(icon) {
+                          icon.style.color = '#AFAFAF'; // Reset icon color
+                        });
+                      });
+
+                      // Change the background color, text color, and icon color of the clicked button
+                      this.style.backgroundColor = '#FFD029';
+                      this.style.color = 'white'; // Change text color to black
+                      var icons = this.querySelectorAll('i');
+                      icons.forEach(function(icon) {
+                        icon.style.color = 'white'; // Change icon color to black
+                      });
+                    });
+                  });
+                });
+                </script>
+
+
+
+
+            </div>
+
+
+
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <a href="AllDone.html"><button class="custom-buttonNew custom-buttonBlack custom-buttonnextfeed" type="button" name="button">Next</button></a>
+
+    </div>
+  </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
